@@ -7,7 +7,7 @@
 - intelliJ
 
 ## Steps to run tests
-1. `git clone `
+1. `git clone https://github.com/hbahuguna/petstore.git`
 2. `mvn clean test`
 3. find jUnit reports under `target/surefire-reports/` directory
 4. `.txt` files contain requests and responses for failed tests
