@@ -30,11 +30,14 @@
 - `model` package contains POJOs to deserialize responses and build expected beans for tests
 - `request` package was intended to keep code related to requests. Right now it has an Enum to pass different status requests to findByStatus endpoint.
 - `test` package contains the tests for both endpoints
-- test classes extend from a base class that contains methods for POST and GET
+- Test classes extend from a base class that contains methods for POST and GET
 - `findByStatus` is not reliably returning same results, so we need to post a pet and then verify that recently created pet exists in the response
-- this way our tests are more reliable, since it creates its own data
-- each time post creates a random name and then we check in the response that there exists a pet with this randomly generated name
+- This way our tests are more reliable, since it creates its own data
+- Each time post creates a random name and then we check in the response that there exists a pet with this randomly generated name
 - There is a bug that was discovered, when we pass "&" as a status, its returns a valid response
+
+##Caveats
+- IntelliJ Lombok plugin is required to compile Lombok code on the IDE.
 
   
  
